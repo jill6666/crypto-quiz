@@ -13,9 +13,9 @@
 
 var N = 5;
 var M = 3;
-var I = [1, 3];
-var J = [3, 5];
-var K = [1, 5];
+var I = [1, 3]; // [i, j]
+var J = [3, 5]; // [i, j]
+var K = [1, 5]; // [i, j]
 
 function getCrypto(N, M, ...theArgs) {
     let result = [];
