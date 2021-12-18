@@ -40,3 +40,6 @@ function getCrypto(N, M, ...theArgs) {
     return result.length; // 持有比特幣的韭菜數量
 }
 ```
+## Executing program
+1. Clone the repo to local and open LiveServer with IDE plugin.
+2. Copy the codes in `index.js` and paste in browser's devTool.
