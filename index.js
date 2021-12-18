@@ -16,7 +16,6 @@ var M = 3;
 var I = [1, 3];
 var J = [3, 5];
 var K = [1, 5];
-var L = [3, 5];
 
 function getCrypto(N, M, ...theArgs) {
     let result = [];
@@ -31,4 +30,4 @@ function getCrypto(N, M, ...theArgs) {
     })
     return result.length;
 }
-console.log('getCrypto', getCrypto(N, M, I, J, K, L))
+console.log('getCrypto', getCrypto(N, M, I, J, K))
