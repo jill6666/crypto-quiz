@@ -19,15 +19,15 @@ var K = [1, 5];
 
 function getCrypto(N, M, ...theArgs) {
     let result = [];
-    var arrN = Array.from({ length: N });
-    arrN.forEach((people, index) => {   // 開始割韭菜
-        people = 0
-        let no = index + 1              //給韭菜編號
+    var arrN = Array.from({ length: N }); //建立韭菜陣列
+    arrN.forEach((person, index) => {   // 開始割韭菜
+        person = 0;
+        let no = index + 1;              //給韭菜編號
         theArgs.forEach((item) => {
-            if (no >= item[0] && no <= item[1]) people += 1; //韭菜編號是否在割的範圍內，是的話 +1
+            if (no >= item[0] && no <= item[1]) person += 1; //韭菜編號是否在割的範圍內，是的話 +1
         })
-        if (people < M) result.push('has remain') //people=被割的次數，被割的次數小於M總次數就是還有剩餘的比特幣
+        if (person < M) result.push('has remain') //person=被割的次數，被割的次數小於M總次數就是還有剩餘的比特幣
     })
-    return result.length;
+    return result.length; // 持有比特幣的韭菜數量
 }
 console.log('getCrypto', getCrypto(N, M, I, J, K))
